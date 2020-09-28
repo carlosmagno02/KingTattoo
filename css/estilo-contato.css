@@ -1,0 +1,86 @@
+.banner-contato{
+    height: 150px;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: cover;
+    padding-top: 130px;
+}
+
+.texto-banner-contato{
+width: 1200px;
+margin: auto;
+padding-top: 35px;
+color: white;
+}
+
+.texto-banner-contato h1{
+font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 70px;
+text-transform: uppercase;
+}
+
+.contato{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-contato, .form-contato{
+    padding: 80px 0;
+    width: 45%;
+}
+
+.contato h2{
+    font-family: Alice;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    padding: 0 0 20px 0;
+}
+
+.contato p{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px 0;
+    line-height: 35px;
+}
+
+form label, form legend{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    padding: 0 0 5px 0;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px 0;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.enviar{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 40%;
+    padding: 15px 0;
+    background: #7E0B83;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: black;
+    color: #7E0B83;
+}
