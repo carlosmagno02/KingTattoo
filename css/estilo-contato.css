@@ -8,7 +8,8 @@
 }
 
 .texto-banner-contato{
-width: 1200px;
+width: 100%;
+max-width: 1200px;
 margin: auto;
 padding-top: 35px;
 color: white;
@@ -83,4 +84,21 @@ form label, form legend{
 .enviar:hover{
     background: black;
     color: #7E0B83;
+}
+
+@media screen and (max-width:1040px){
+    .texto-contato, .form-contato{
+        padding-left:5%;
+        width: 90%;
+    }
+    
+    .texto-banner-contato h1{
+        padding-left: 5%;
+        }
+}
+
+@media screen and (max-width:570px){
+    .contato{
+        flex-direction: column;
+    }
 }

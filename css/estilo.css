@@ -6,6 +6,9 @@ body{
     background-color: #EBDED1;
 }
 
+html, body{
+    height: 100%;
+}
 header{
     width: 100%;
     background-color: #F2F5E7;
@@ -15,11 +18,11 @@ header{
 
 .logotipo-topo{
     width: 170px;
-
 }
 
 .topo-conteudo{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -27,11 +30,15 @@ header{
 }
 
 .nav{
+    width: 100%;
     padding: 44px 0 46px 0;
+    /* width: 30%; */
 }
 
 .menu{
-    width: 367px;
+    padding-inline-start: 0;
+    width: 100%;
+    max-width: 367px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -43,6 +50,10 @@ header{
     font-weight: normal;
     font-size: 35px;
     text-decoration: none;
+    /* display: flex; */
+    padding-left:10px ;
+    padding-right: 10px;
+    /* justify-content: space-between; */
     color: #000;
 }
 
@@ -55,7 +66,10 @@ header{
 }
 
 .banner{
-    height: 500px;
+    height:90% ; 
+    max-height: 500px;
+    width: 100%;
+    max-width: 1380px;
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -64,9 +78,10 @@ header{
 }
 
 .texto-banner{
-    width: 1200px;
+    max-width: 1200px;
+    width: 95%;
     margin: auto;
-    padding-top: 186px;
+    padding-top: 15%;
     color: white;
 }
 
@@ -86,7 +101,8 @@ font-size: 30px;
 }
 
 main{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -94,10 +110,12 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 120px 0;
+    width: 100%;
 }
 
 .boxes div{
-    width: 590px;
+    width: 90%;
+    max-width: 590px;
 }
 
 .boxes h2{
@@ -115,6 +133,7 @@ main{
     font-size: 20px;
     padding-bottom: 30px;
     line-height: 35px;
+    width: 100%;
 }
 
 .boxes a{
@@ -154,4 +173,56 @@ footer{
     padding: 23px 0;
     color: #E1868A;
     text-transform: uppercase;
+}
+
+@media screen and (max-width:1024px){
+    .boxes{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .box-quem-somos{
+        padding-left: 2.5%;
+        padding-right: 1.25%;
+    }
+    .box-contato {
+        padding-left: 1.25%;
+        padding-right: 2.5%;
+    }
+    .box-quem-somos img, .box-contato img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px){ 
+    header{
+        width: 100%;
+        height: 70px;
+        background-color: #F2F5E7;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+        position: fixed;
+    }   
+
+    .menu a{
+        font-size: 20px;
+    }
+
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .box-quem-somos img, .box-contato img{
+        width: 100%;
+    }
+
+    .box-quem-somos , .box-contato {
+        padding-left: 5%;
+    }
+
+     .logotipo-topo{
+        width: 110px;
+    } 
 }

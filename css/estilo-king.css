@@ -8,7 +8,8 @@
 }
 
 .texto-banner-king{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     padding-top: 35px;
     color: white;
@@ -24,6 +25,8 @@ text-transform: uppercase;
 
 .texto-king{
     padding: 80px 0;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .texto-king h2{
@@ -35,6 +38,7 @@ text-transform: uppercase;
 }
 
 .texto-king p{
+    width: 100%;
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;
@@ -47,5 +51,49 @@ text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
+
+.img-king img {
+    width: 33%;
+}
+
+@media screen and (max-width:1024px){
+    .texto-king {
+        padding-left: 5%;
+        width: 90%;
+    }
+    .texto-banner-king h1{
+        padding-left: 3.5%;
+    }
+    .img-king{
+        width: 90%;
+        margin: auto;
+    }
+
+    .img-king img {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width:570px){
+    .img-king{
+        flex-direction: column;
+    }
+
+    .img-king img{
+        width: 100%;
+        padding: 2% 0;
+    }
+
+    .texto-king {
+        padding-left: 5%;
+        width: 90%;
+    }
+    .texto-banner-king h1{
+        padding-left: 3.5%;
+        }
+}
